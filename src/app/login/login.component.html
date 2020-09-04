@@ -1,0 +1,59 @@
+<div class="container-fluid">
+  <div class="row bg-light sticky-top" style="height: 60px">
+    <div class="col-1  h5" style="height: 60px">
+      <img [src]=logo style="height: 50px; width: 50px;">
+
+    </div>
+    <!-- <div class="col-3 d-flex align-items-center ml-0 " style="height: 60px">
+      <button class="btn btn-lg btn-dark mr-1 rounded-pill" (click)="gotoRoute(item.link)"
+        *ngFor="let item of linksList">
+        {{ item.title }}
+      </button>
+    </div>
+    <div class="col-5  d-flex align-items-center ml-0" style="height: 60px" id="search">
+      <input class="rounded-pill" id="search-box" type="text" placeholder="Search" />
+    </div> -->
+    <!-- <div class="col-3 ">
+      <a routerLink="/profile">
+         <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-person-circle mt-1 " fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+            <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+          </svg>
+      </a>
+    </div> -->
+
+
+  </div>
+  <!-- <div class="container-fluid " > -->
+  <div class="row " style="height: 100vh;">
+
+    <div class="col bg-light d-flex  flex-column justify-content-center align-items-center" [formGroup]="fbFormGroup">
+
+      <div class="col-12  d-flex flex-column justify-content-center align-items-center"
+        style="height: 500px;width: 400px;">
+        <div class="alert alert-danger" role="alert" *ngIf="uiInvalidCredential">
+          A simple danger alert—check it out!
+        </div>
+
+        <div class="h4 d-flex align-items-center" style="font-weight: bold;">Login</div>
+
+        <div style="width: 100%;">
+          <input type="text" placeholder="Enter Username" class="form-control" formControlName="username" />
+        </div>
+
+        <div class="mt-1" style="width: 100%;">
+          <input type="password" placeholder="Enter Password" class="form-control" formControlName="password" />
+        </div>
+
+        <button class="btn btn-sm mt-2 mb-2" [disabled]="!fbFormGroup.valid" (click)="loginProcessHere()"
+          style="width: 100%; background-color:red;color: seashell;">
+          Login Here
+        </button><br>
+
+        <a routerLink="/signup" style="color: black;">Click here to Signup.</a>
+      </div>
+
+    </div>
+  </div>
+</div>

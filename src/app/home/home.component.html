@@ -1,0 +1,332 @@
+<div class="container-fluid">
+    <div class="row bg-light sticky-top" style="height: 60px">
+        <div class="col-1  h5" style="height: 60px">
+            <img [src]=logo style="height: 50px; width: 50px;">
+
+        </div>
+        <!-- <div class="col-3 d-flex align-items-center ml-0 " style="height: 60px">
+            <button class="btn btn-lg btn-dark mr-1 rounded-pill" (click)="gotoRoute(item.link)"
+                *ngFor="let item of linksList">
+                {{ item.title }}
+            </button>
+        </div> -->
+        <!-- <div class="col-5  d-flex align-items-center ml-0" style="height: 60px" id="search">
+            <input class="rounded-pill" id="search-box" type="text" placeholder="Search" />
+        </div> -->
+        <div class="col-9"></div>
+        <div class="col-1 " (click)="gotoprofile()">
+
+            <!-- <a routerLink="/profile"> -->
+            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-person-circle mt-1 " fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z" />
+                <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+            </svg>
+            <!-- </a> -->
+        </div>
+        <div class="col-1">
+            <button class="btn btn-lg btn-dark mt-1 rounded-pill" (click)="logOutAndClose()">Logout</button>
+        </div>
+
+
+    </div>
+    <div id="wrapper">
+        <div id="columns">
+            <div class="pin">
+                <img src="assets/1.jpg" />
+                <button (click)="onadd('assets/1.jpg')" class="fill">Add </button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/2.jpg" />
+                <button (click)="onadd('assets/2.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/3.jpg" />
+                <button (click)="onadd('assets/3.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/4.jpg" />
+                <button (click)="onadd('assets/4.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/5.jpg" />
+                <button (click)="onadd('assets/5.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/6.jpg" />
+                <button (click)="onadd('assets/6.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/7.jpg" />
+                <button (click)="onadd('assets/7.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/8.jpg" />
+                <button (click)="onadd('assets/8.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/9.jpg" />
+                <button (click)="onadd('assets/9.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/10.jpg" />
+                <button (click)="onadd('assets/10.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/11.jpg" />
+                <button (click)="onadd('assets/11.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/12.jpg" />
+                <button (click)="onadd('assets/12.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/13.jpg" />
+                <button (click)="onadd('assets/13.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/14.jpg" />
+                <button (click)="onadd('assets/14.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/15.jpg" />
+                <button (click)="onadd('assets/15.jpg')" class="fill">Add</button>
+
+            </div>
+            <div class="pin">
+                <img src="assets/16.jpg" />
+                <button (click)="onadd('assets/16.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/17.jpg" />
+                <button (click)="onadd('assets/17.jpg')" class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/18.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/19.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/20.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+            <div class="pin">
+                <img src="assets/21.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/22.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/23.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/24.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/25.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+            <div class="pin">
+                <img src="assets/26.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/27.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/28.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/29.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/30.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+            <div class="pin">
+                <img src="assets/31.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/15.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/18.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/34.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/14.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+            <div class="pin">
+                <img src="assets/36.png" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/37.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/38.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/39.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/40.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+            <div class="pin">
+                <img src="assets/41.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/42.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/43.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/44.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/45.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+            <div class="pin">
+                <img src="assets/46.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/47.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/48.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/49.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+
+            <div class="pin">
+                <img src="assets/35.jpg" />
+                <button class="fill">Add</button>
+
+            </div>
+        </div>
+    </div>
+
+</div>

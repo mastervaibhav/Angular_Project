@@ -1,0 +1,16 @@
+/* #search {
+    width: 600px;
+    float: left; 
+     margin-left: 240px;
+    padding-top: 10px; 
+} */
+
+#search-box {
+    width: 600px;
+    height: 40px;
+    /* border-radius: 8px; */
+    padding: 10px;
+    background-color: #e9e9e9;
+    margin: 10pxpx;
+    border: 0px;
+}
